@@ -10,12 +10,16 @@ void ofApp::setup(){
  
      x = abs(img.getWidth() - ofGetWidth())/2;
      y = abs(img.getHeight() - ofGetHeight())/2;
+     
+     
+     cout << "Hello from setup" << endl;
 
      /*
        (A)
 
        n =  3 * img.getWidth() * img.getHeight();
      */
+     
 }
 
 
@@ -32,10 +36,14 @@ img.draw(x,y);
 
 //--------------------------------------------------------------
 void ofApp::keyPressed(int key){
+	
+	
 
     if (key == 'i') 
           { 
  
+             cout << "i has been pressed " << endl;
+             
              /*  
                 (B)
 
@@ -44,6 +52,10 @@ void ofApp::keyPressed(int key){
              */ 
            img.update();
            }//end if
+           
+           else
+           
+           cout << "A key has been pressed" << endl;
 }
 
 

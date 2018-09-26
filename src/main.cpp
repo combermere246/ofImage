@@ -10,4 +10,6 @@ int main( ){
 	// pass in width and height too:
 	ofRunApp(new ofApp());
 
+
+	cout << endl << endl << "Hello from main" << endl << endl;
 }
